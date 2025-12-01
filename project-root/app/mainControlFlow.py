@@ -1,10 +1,10 @@
 import psycopg2
 import requiredFunctions
 
-#Connect to DB
-db = "Fresh3005FinalDB"
-usr = "postgres"
-login = "PD-Post1r"
+#Connect to DB -- PUT DB HERE
+db = ""
+usr = ""
+login = ""
 
 #Set up and validate connection
 try:
@@ -123,5 +123,6 @@ def adminMenu():
         except:
             connection.rollback()
             print("Invalid Input")
+
 
 mainLoop()
